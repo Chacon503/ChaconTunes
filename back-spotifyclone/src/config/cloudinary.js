@@ -12,14 +12,14 @@ cloudinary.config({
 
 const uploadFile = (file) => {
     return cloudinary.uploader.upload(file.tempFilePath, {
-        folder: 'codetunes',
+        folder: 'Codetunes',
         public_id: randomstring.generate(15),
         resource_type: 'auto'
     })
 }
 
 const deleteFile = (public_id) => {
-    return cloudinary.uploader.destroy(public_id, { resource_type: 'video' });
+    return cloudinary.uploader.destroy(public_id, { resource_type: 'music' });
 }
 
 module.exports = { uploadFile, deleteFile }

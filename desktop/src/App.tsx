@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Container>
-        <h1>CodeTunes</h1>
+        <h1>MagicalTunes</h1>
         <Outlet />
       </Container>
     </>
